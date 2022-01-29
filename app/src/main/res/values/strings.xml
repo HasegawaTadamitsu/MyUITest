@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyUITest</string>
+    <string name="bt_change_label">保存</string>
+    <string name="cb_man">男</string>
+    <string name="cb_women">女</string>
+    <string name="name">名前</string>
+    <string name="bt_clear_label">clear</string>
+
+</resources>
