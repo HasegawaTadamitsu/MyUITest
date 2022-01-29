@@ -25,7 +25,7 @@
             android:id="@+id/et_inputName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/name" />
+            android:text="@string/et_default_label" />
 
         <Button
             android:id="@+id/bt_change"
@@ -68,5 +68,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/bt_clear_label" />
+
+        <ListView
+            android:id="@+id/lv_sample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/lx_menu"
+            />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

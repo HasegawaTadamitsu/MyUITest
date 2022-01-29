@@ -1,8 +1,9 @@
 package com.haselab.myuitest
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ListView
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +15,11 @@ class MainActivity : AppCompatActivity() {
         val btClear = findViewById<Button>(R.id.bt_clear)
         btClear.setOnClickListener(listener)
 
+        val mlv =  MainListView(this)
+        mlv.setItem()
+        val lvSample = findViewById<ListView>(R.id.lv_sample)
+
+        lvSample.onItemClickListener = mlv
 
     }
 }
